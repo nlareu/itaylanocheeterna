@@ -73,7 +73,7 @@ public class AvatarController : MonoBehaviour
         this.PlayerNumber = AppController.AddPlayer(this);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         switch (this.State)
         {
@@ -128,7 +128,9 @@ public class AvatarController : MonoBehaviour
             this.IsJumping = true;
         }
 
-        this.transform.Translate(moveVector);
+        this.rigidBody.velocity = new Vector2(moveVector.x, this.rigidBody.velocity.y);
+        //this.transform.Translate(moveVector);
+        //this.rigidBody.AddForce(moveVector);
     }
 
     private void OnCollisionEnter2D(Collision2D col)
