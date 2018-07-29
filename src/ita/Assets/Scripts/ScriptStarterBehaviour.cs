@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public abstract class ScriptStarter : MonoBehaviour, IScriptStarter
+public class ScriptStarterBehaviour : MonoBehaviour, IScriptStarter
 {
     public bool Started { get; private set;}
 
-    public ScriptStarter()
+    public ScriptStarterBehaviour()
     {
         this.Started = false;
-
-        if (this.gameObject.activeSelf == true)
-            this.gameObject.SetActive(false);
     }
 
-    //protected abstract void Execute();
     public void StartScript()
     {
         if (this.Started == false)
@@ -23,8 +16,6 @@ public abstract class ScriptStarter : MonoBehaviour, IScriptStarter
             this.gameObject.SetActive(true);
 
             this.Started = true;
-
-            //this.Execute();
         }
     }    
 }

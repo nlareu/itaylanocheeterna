@@ -4,21 +4,18 @@ using UnityEngine;
 
 public class ScriptStarterTrigger : MonoBehaviour {
 
-    public ScriptStarter Target;
+    public ScriptStarterBehaviour Target;
+    public string TriggerTag;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         if (this.Target == null)
-            throw new System.Exception("Target msut be set.");
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-		
+            throw new System.Exception("Target must be set.");
 	}
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        this.Target.StartScript();
+        if (col.tag == this.TriggerTag)
+            this.Target.StartScript();
     }
 }

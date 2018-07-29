@@ -10,7 +10,10 @@ public class CollisionsManager {
         {
             new AvatarCheckpointCollision(),
             new AvatarEnemyCollision(),
+            new AvatarFrogCollision(),
             new AvatarGroundCollision(),
+            new AvatarSnakeCollision(),
+            new FrogGroundCollision(),
         };
     }
 
@@ -20,6 +23,8 @@ public class CollisionsManager {
 
         if (gameColl != null)
             gameColl.Resolve(collider1, collider2, collision);
+        else
+            Debug.Log(string.Format("Collision not configured: '{0}' - '{1}'.", collider1.tag, collider2.tag));
     }
     public static void ResolveCollision(GameObject collider1, GameObject collider2, Collider2D collider)
     {
@@ -27,5 +32,8 @@ public class CollisionsManager {
 
         if (gameColl != null)
             gameColl.Resolve(collider1, collider2, collider);
+        else
+            Debug.Log(string.Format("Collision not configured: '{0}' - '{1}'.", collider1.tag, collider2.tag));
+
     }
 }

@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Ground
   - ScreenLimit
+  - Frog
+  - Snake
   layers:
   - Default
   - TransparentFX
