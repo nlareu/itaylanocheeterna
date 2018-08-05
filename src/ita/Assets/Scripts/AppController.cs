@@ -16,9 +16,7 @@ public class AppController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Return))
         {
             //Reset static.
-            AppController.players.Clear();
-
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            AppController.ResetGame();
         }
     }
 
@@ -37,6 +35,12 @@ public class AppController : MonoBehaviour {
     {
         //Return a copy to prevent reference and not desired changes on the list.
         return new List<AvatarController>(AppController.players);
+    }
+    public static void ResetGame()
+    {
+        AppController.players.Clear();
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public static void SetLastCheckpoint(Transform cp)
     {

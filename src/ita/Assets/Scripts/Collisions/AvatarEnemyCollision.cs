@@ -10,10 +10,12 @@ public class AvatarEnemyCollision : GameCollision
     }
     public override void Resolve(GameObject collider1, GameObject collider2, Collision2D collision)
     {
-        AvatarController ac = collider1.GetComponent<AvatarController>();
+        AppController.ResetGame();
 
-        var cp = AppController.GetLastCheckpoint();
+        //AvatarController ac = collider1.GetComponent<AvatarController>();
 
-        ac.transform.position = new Vector2(cp.position.x, ac.transform.position.y);
+        //var cp = AppController.GetLastCheckpoint();
+
+        //ac.transform.position = new Vector2(cp.position.x, ac.transform.position.y);
     }
 }

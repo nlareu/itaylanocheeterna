@@ -10,6 +10,9 @@ TagManager:
   - ScreenLimit
   - Frog
   - Snake
+  - Water
+  - Monkey
+  - Bullet
   layers:
   - Default
   - TransparentFX
