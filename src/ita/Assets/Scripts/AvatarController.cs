@@ -121,9 +121,10 @@ public class AvatarController : MonoBehaviour
             //this.animator.SetFloat("MoveX", 0.5f);
         }
 
-        if (Input.GetButton(this.playerName + "Jump") && this.IsJumping == false)
+        if (Input.GetButtonDown(this.playerName + "Jump") && this.IsJumping == false)
         {
-            this.rigidBody.AddForce(Vector2.up * this.JumpHeight);
+            //this.rigidBody.AddForce(Vector2.up * this.JumpHeight);
+            this.rigidBody.velocity = new Vector2(this.rigidBody.velocity.x, this.JumpHeight);
 
             this.IsJumping = true;
         }
