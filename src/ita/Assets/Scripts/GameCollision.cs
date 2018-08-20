@@ -4,8 +4,8 @@ public interface IGameCollision
 {
     string Collider1Tag { get; }
     string Collider2Tag { get; }
-    void Resolve(GameObject collider1, GameObject collider2, Collider2D collider);
-    void Resolve(GameObject collider1, GameObject collider2, Collision2D collision);
+    void Resolve(GameObject collider1, GameObject collider2, Collider2D collider, params object[] parameters);
+    void Resolve(GameObject collider1, GameObject collider2, Collision2D collision, params object[] parameters);
 }
 
 public abstract class GameCollision : IGameCollision
@@ -23,6 +23,6 @@ public abstract class GameCollision : IGameCollision
         //this.Collider2 = collider2;
     }
 
-    public abstract void Resolve(GameObject collider1, GameObject collider2, Collider2D collider);
-    public abstract void Resolve(GameObject collider1, GameObject collider2, Collision2D collision);
+    public abstract void Resolve(GameObject collider1, GameObject collider2, Collider2D collider, params object[] parameters);
+    public abstract void Resolve(GameObject collider1, GameObject collider2, Collision2D collision, params object[] parameters);
 }
