@@ -8,6 +8,7 @@ public class CollisionsManager {
     static CollisionsManager() {
         Collisions = new List<IGameCollision>
         {
+            new AvatarAguaraguazuFemaleCollision(),
             new AvatarBulletCollision(),
             new AvatarCheckpointCollision(),
             new AvatarEnemyCollision(),
