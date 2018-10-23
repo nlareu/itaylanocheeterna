@@ -17,5 +17,18 @@ public class ScriptStarterBehaviour : MonoBehaviour, IScriptStarter
 
             this.Started = true;
         }
-    }    
+    }
+
+    public void StopScript()
+    {
+        if (this.Started == true)
+        {
+            this.Stop();
+
+            this.Started = false;
+        }
+    }
+
+    protected virtual void Stop()
+    { }
 }
