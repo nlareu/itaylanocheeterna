@@ -55,7 +55,8 @@ public class AvatarController : MonoBehaviour
     internal BoxCollider2D boxCollider;
     private string playerName
     {
-        get { return "Player" + this.PlayerNumber + "-"; }
+        //get { return "Player" + this.PlayerNumber + "-"; }
+        get { return "Player-"; }
     }
     private AvatarStates previousState;
     private SpriteRenderer spriteRendered;
