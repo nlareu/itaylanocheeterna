@@ -5,9 +5,18 @@ public class AvatarController : MonoBehaviour
     public float debugvar = 10f;
 
     public float AxisSensitive = 0.7f;
+    //Un game object sin render que se coloca frente al personaje para interactuar con objetos o personajes
+    //CUIDADO al cambiar las animaciones del personaje porque las modifique para que la posicion
+    //de este objeto cambie segun la animacion.
+    //Si se cambian las animaciones, hay que volver a modificar la posicion manualmente o no va a haber interaccion
+    [SerializeField]
+    GameObject interactionPos;
+    [SerializeField]
+    float interactionRange = 1f;
     public bool IsJumping = false;
     public float JumpHeight = 250.0f;
     public int PlayerNumber { get; protected set; }
+    public float PushForce = 50.0f;
     public float Speed = 6.0F;
     private AvatarStates state = AvatarStates.Normal;
     public AvatarStates State
@@ -58,6 +67,7 @@ public class AvatarController : MonoBehaviour
         //get { return "Player" + this.PlayerNumber + "-"; }
         get { return "Player-"; }
     }
+
     private AvatarStates previousState;
     private SpriteRenderer spriteRendered;
     internal Rigidbody2D rigidBody;
@@ -83,6 +93,8 @@ public class AvatarController : MonoBehaviour
                 {
                     this.CheckAvatarMove();
 
+                    this.PlayerInteraction();
+
                     break;
                 }
             #endregion
@@ -106,7 +118,7 @@ public class AvatarController : MonoBehaviour
             moveVector += Vector2.left * this.Speed * Time.deltaTime;
 
             this.animator.SetBool("Moving", true);
-            this.animator.SetFloat("MoveX", -1.5f);
+            this.animator.SetFloat("MoveX", -1f);
         }
         else if ((Input.GetButton(this.playerName + "Right"))
             || (axisHor >= this.AxisSensitive))
@@ -114,7 +126,7 @@ public class AvatarController : MonoBehaviour
             moveVector += Vector2.right * this.Speed * Time.deltaTime;
 
             this.animator.SetBool("Moving", true);
-            this.animator.SetFloat("MoveX", 1.5f);
+            this.animator.SetFloat("MoveX", 1f);
         }
         else
         {
@@ -134,10 +146,27 @@ public class AvatarController : MonoBehaviour
         this.transform.Translate(moveVector);
         //this.rigidBody.AddForce(moveVector);
     }
+    //Acciona el script de interaccion de cualquier objeto con el que interactue
+    void PlayerInteraction()
+    {
+        if (Input.GetButtonDown(this.playerName + "Interaction"))
+        {
+            Collider2D interact = Physics2D.OverlapCircle(interactionPos.transform.position, interactionRange);
+            if (interact.GetComponent<BaseInteraction>() != null)
+            {
+                interact.GetComponent<BaseInteraction>().StartInteraction(this);
+            }
+        }
+    }
 
     private void OnCollisionEnter2D(Collision2D col)
     {
         CollisionsManager.ResolveCollision(this.gameObject, col.gameObject, col);
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(interactionPos.transform.position, interactionRange);
     }
     private void OnTriggerEnter2D(Collider2D col)
     {

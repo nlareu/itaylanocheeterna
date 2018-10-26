@@ -10,6 +10,7 @@ public class CollisionsManager {
         {
             new AvatarAguaraguazuFemaleCollision(),
             new AvatarBulletCollision(),
+            new AvatarCactusCollision(),
             new AvatarCheckpointCollision(),
             new AvatarEnemyCollision(),
             new AvatarFrogCollision(),
