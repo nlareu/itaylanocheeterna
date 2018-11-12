@@ -1,0 +1,388 @@
+fileFormatVersion: 2
+guid: 581aeff59c5acbd4a89e47e65d6ca9e7
+timeCreated: 1541989352
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ita_Run_Right_0
+    21300002: Ita_Run_Right_1
+    21300004: Ita_Run_Right_2
+    21300006: Ita_Run_Right_3
+    21300008: Ita_Run_Right_4
+    21300010: Ita_Run_Right_5
+    21300012: Ita_Run_Right_6
+    21300014: Ita_Run_Right_7
+    21300016: Ita_Run_Right_8
+    21300018: Ita_Run_Right_9
+    21300020: Ita_Run_Right_10
+    21300022: Ita_Run_Right_11
+    21300024: Ita_Run_Right_12
+    21300026: Ita_Run_Right_13
+    21300028: Ita_Run_Right_14
+    21300030: Ita_Run_Right_15
+    21300032: Ita_Run_Right_16
+    21300034: Ita_Run_Right_17
+    21300036: Ita_Run_Right_18
+    21300038: Ita_Run_Right_19
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ita_Run_Right_0
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1731
+        width: 267
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_1
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 1740
+        width: 263
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_2
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 1731
+        width: 249
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_3
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 1727
+        width: 236
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_4
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1366
+        width: 214
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_5
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1397
+        width: 244
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_6
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1371
+        width: 214
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_7
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 1389
+        width: 227
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_8
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1072
+        width: 254
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_9
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1064
+        width: 267
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_10
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 1068
+        width: 245
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_11
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 1081
+        width: 232
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_12
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 730
+        width: 250
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_13
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 725
+        width: 236
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_14
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 738
+        width: 218
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_15
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 730
+        width: 276
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_16
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 400
+        width: 285
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_17
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 400
+        width: 267
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_18
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 427
+        width: 285
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ita_Run_Right_19
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 409
+        width: 267
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -16,6 +16,7 @@ public class CollisionsManager {
             new AvatarFrogCollision(),
             new AvatarGroundCollision(),
             new AvatarSnakeCollision(),
+            new AvatarYasiCollision(),
             new FrogGroundCollision(),
         };
     }
